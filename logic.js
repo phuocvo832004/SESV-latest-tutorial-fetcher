@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const getLatestTutorials = async () => {
         try {
-            const response = await fetch("https://cors-anywhere.herokuapp.com/https://www.sesvtutorial.com/page-data/tutorials/page-data.json");
+            const response = await fetch('https://api.allorigins.win/raw?url=https://www.sesvtutorial.com/page-data/tutorials/page-data.json');
             if (!response.ok) {
                 throw new Error('Failed to fetch tutorials');
             }
